@@ -10,7 +10,8 @@ const app = express();
 app.get("/", (req, res) => {
     res.send("Hola");
 });
-
+// permite hacer parse con los req que ingresan, con json payload
+app.use(express.json());
 app.use("/api/auth", authRoutes);
 
 // puerto 3000
