@@ -15,7 +15,7 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 
 // puerto 3000
-app.listen(3000, () => {
+app.listen(5000, () => {
     connectDB();
     console.log("Server funciona");
 });
